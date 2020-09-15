@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página Pessoal</title>
+    </head>
+    <style>
+        :root {
+            font-family: sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+        h1 {
+            margin: 0;
+            text-shadow: 0 4px 4px #0004;
+            width: 15ch;
+        }
+        .header{
+            height: 50vh;
+            background: linear-gradient(to right bottom, #ff4f4f, #ff7d1b);
+            color: #fff;
+            text-align: center;
+            display: grid;
+            place-items: center;
+            box-shadow: 0 4px 4px #0004;
+        }
+
+        .profile {
+            position: relative;
+            top: -75px;
+            text-align: center;
+            border: 5px dotted greenyellow;
+        }
+
+        .profile p {
+            margin: 32px auto;
+            max-width: 75ch;
+            font-style: italic;
+        }
+
+        .profile__avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 4px #0004;
+        }
+        
+    </style>
+    <body>
+        <header class="header">
+            <h1>Olá, meu nome é Alex Silva</h1>
+        </header>
+        <section class="profile">
+        <img class="profile__avatar" src="alex.jpg" alt="Alex"/>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consequatur odio error corporis nisi suscipit numquam necessitatibus, earum nihil vero. Ducimus a id debitis odit error odio, repudiandae neque fugit?
+        </p> 
+
+        </section>
+        
+    </body>
+</html>
