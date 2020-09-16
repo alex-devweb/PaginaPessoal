@@ -1,5 +1,8 @@
 :root {
     font-family: sans-serif;
+    --color-link: #0085ff;
+    --color-gradient-top: #ff4f4f;
+    --color-gradient-bottom: #ff7d1b;
 }
 
 body {
@@ -12,7 +15,7 @@ h1 {
 }
 .header{
     height: 50vh;
-    background: linear-gradient(to right bottom, #ff4f4f, #ff7d1b);
+    background: linear-gradient(to right bottom, var(--color-gradient-top), var(--color-gradient-bottom) );
     color: #fff;
     text-align: center;
     display: grid;
@@ -42,7 +45,7 @@ h1 {
     font-style: italic;
 }
 
-.profile__social {
+.profile__social, .footer__social {
     display: flex;
     grid-auto-flow: column;
     gap: 16px;
@@ -50,7 +53,25 @@ h1 {
     padding: 0;
     width: fit-content;
     list-style: none;
-    color: #0085ff;
+    color: var(--color-link);
+}
+
+.footer {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 16px;
+    background: #000;
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.footer__social {
+    margin: 0;
+   justify-self: end;
 }
 
 
